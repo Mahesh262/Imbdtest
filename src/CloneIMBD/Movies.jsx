@@ -29,7 +29,7 @@ const Movies = () => {
      })} 
       <Row className="pt-5">
      <h4>Gnenre 2 </h4>
-     {movie.map((data)=>{
+     {movie.items.map((data)=>{
        return  <Col sm={4} xl={3} className="d-flex justify-content-center" key={data.id}>
        <Card  className="product-card">
       <Link to={"/Details/"+data.id}> <img src= {data.image} alt={data.title} style ={{width:"100%",}}/></Link>
